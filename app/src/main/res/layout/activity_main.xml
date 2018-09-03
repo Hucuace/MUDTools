@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/txtview1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@android:color/holo_blue_bright"
+        android:background="@drawable/textview_border"
+        app:layout_constraintBottom_toTopOf="@+id/edtxt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtxt1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginStart="17dp"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="发送"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtxt1"
+        app:layout_constraintTop_toBottomOf="@+id/txtview1"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>
